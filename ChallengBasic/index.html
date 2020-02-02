@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linx-Challenge</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="headers-container">
+            <p class="firstH">uma seleção de produtos</p>
+            <p class="secondH">especial para você</p>
+        </div>
+        <p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
+        <nav class="navigation">
+            <a href="#" class="nav-button">Conheça a Linx</a>
+            <a href="#" class="nav-button">Ajude o algoritmo</a>
+            <a href="#" class="nav-button">Seus produtos</a>
+            <a href="#" class="nav-button">Compartilhe</a>
+        </nav>
+    </header>
+
+    <section class="products-container">
+        <h3 class="products-header">Sua seleção especial</h3>
+        <div id="products"></div>
+        <div id="loading" class="loading-container">
+            <div class="loading"></div>
+        </div>
+        <small id="load-products-error">Erro ao carregar os produtos!</small>
+        <button id="more-products">Ainda mais produtos aqui!</button>
+    </section>
+    
+    <section class="newsletter-container">
+        <h4 class="news-header">Compartilhe a novidade</h4>
+        <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+        <form class="form">
+            <div class="forms-control">
+                <div class="form-control">
+                    <label>Nome do seu amigo:</label>
+                    <input id="newsletter-friend-name" type="text" />
+                    <small id="newsletter-name-feedback" class="newsletter-form-feedback"></small> 
+                </div>
+                <div class="form-control">
+                    <label>E-mail:</label>
+                    <input id="newsletter-friend-email" type="email" />
+                    <small id="newsletter-email-feedback" class="newsletter-form-feedback"></small> 
+                </div>
+            </div>
+            <small id="newsletter-feedback" class="newsletter-post-feedback"></small>
+            <button id="newsletter-submit-button" type="button">Enviar agora</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>
+            Testando suas habilidades em HTML, CSS e JS <br/>
+            Linx Impulse <br />
+            2019
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
